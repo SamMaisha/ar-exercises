@@ -9,6 +9,8 @@ puts "----------"
 # - Richmond (annual_revenue of 1260000 carries women's apparel only)
 # - Gastown (annual_revenue of 190000 carries men's apparel only)
 
+# 2. Output (`puts`) the number of the stores using ActiveRecord's `count` method, to ensure that there are three stores in the database.
+
 store1 = Store.new
 store1.name = "Burnaby"
 store1.annual_revenue = 300000
@@ -26,3 +28,5 @@ store3 = Store.new do |s|
 end
 
 store3.save
+
+puts Store.count

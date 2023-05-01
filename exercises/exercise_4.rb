@@ -29,3 +29,5 @@ p @mens_stores
 puts "Name: #{s.name} -- Annual Revenue: #{s.annual_revenue}" 
 end
 
+@womens_stores_unprofitable = Store.where("womens_apparel= true AND annual_revenue < 1000000")
+p @womens_stores_unprofitable
